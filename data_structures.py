@@ -9,47 +9,69 @@ pet_names = ['Rose', 'Meow Meow Beans', 'Mr.Legumes', 'Luke', 'Lea', 'Princess G
 
 # Reading Information From Lists
 #2. ✅ Return the first pet name
+print(pet_names[0])
 
 
 #3. ✅ Return all pet names beginning from the 3rd index
+print(pet_names[3:])
 
 
 #4. ✅ Return all pet names before the 3rd index
+print(pet_names[:3])
 
 
 #5. ✅ Return all pet names beginning from the 3rd index and up to the 7th
+print(pet_names[3:7])
 
 
 #6. ✅ Find the index of a given element => .index()
+print(pet_names.index('Rose'))
 
 
 #7. ✅ Reverse the original list => .reverse()
 
+# pet_names.reverse()
+# print(pet_names)
+
 
 #8. ✅ Return the frequency of a given element => .count()
+
+print(pet_names.count('Rose'))
 
 
 # Updating Lists
 #9. ✅ Change the first name to all uppercase letters => .upper()
 
+print(pet_names[0].upper())
+
 
 #10. ✅ Append a new name to the list => .append()
 
+pet_names.append('Whicket')
+print(pet_names)
 
 #11. ✅ Add a new name at a specific index => .insert()
 
+pet_names.insert(0, 'Porkchops')
+print(pet_names)
 
 #12. ✅ Add two lists together => +
+
+print([1,2,3] + [4,5,6])
 
 
 #13. ✅ Remove the final element from the list => .pop()
 
+print(pet_names.pop())
+
 
 #14. ✅ Remove element by specific index => .pop()
-
+print(pet_names.pop(2))
 
 #15. ✅ Remove a specific element => .remove()
 
+pet_names.remove("Lea")
+print(pet_names)
 
 #16. ✅ Remove all pet names from the list => .clear()
 
@@ -59,9 +81,12 @@ pet_names = ['Rose', 'Meow Meow Beans', 'Mr.Legumes', 'Luke', 'Lea', 'Princess G
 
 #17. ✅ Create a Tuple of 10 pet ages => () 
 
+pet_ages = (2,3,3,5,6,7,8,9,10,11)
+
 
 #18. ✅ Print the first pet age => []
 
+print(pet_ages[0])
 
 # Testing Mutability 
 #19. ✅ Attempt to remove an element with ".pop" (should error)
@@ -73,19 +98,21 @@ pet_names = ['Rose', 'Meow Meow Beans', 'Mr.Legumes', 'Luke', 'Lea', 'Princess G
 # Tuple Methods
 #21. ✅ Return the frequency of a given element => .count()
 
+print(pet_ages.count(3))
 
 #22. ✅ Return the index of a given element  => .index()
-
+print(pet_ages.index(5))
 
 #23. ✅ Create a Range 
 # Note:  Ranges are primarily used in loops
 
+print(range(10))
 
 # Sets (Stretch Goal)
 #24. ✅ Create a set of 3 pet foods
 pet_fav_food = {'house plants', 'fish', 'bacon'}
 
-# Dictionaries 
+# Dictionaries (SAME FORMAT AS JSON)
 # Creating 
 #25. ✅  Create a dictionary of pet information with the keys "name", "age" and "breed"
 pet_info_rose = {'name':'Rose', 'age':11, 'breed':'domestic long'}
@@ -97,6 +124,8 @@ pet_info_spot = dict(name='Spot', age=25, breed='boxer')
 # Reading
 #27. ✅ Print the pet attribute of "name" using bracket notation 
 # print(pet_info_rose['temperament'])
+print(pet_info_rose['name'])
+
 
 #28. ✅ Print the pet attribute of "age" using ".get"
 
