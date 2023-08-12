@@ -136,6 +136,8 @@ print(pet_info_rose['name'])
 # Updating 
 #29. ✅ Update Rose's age to 12 => []
 
+pet_info_rose['age'] = 12
+print(pet_info_rose['age'])
 
 #30. ✅ Update Spot's age to 26 => .update({...})
 
