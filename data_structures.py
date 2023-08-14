@@ -275,10 +275,22 @@ print(update_pet_age(pet_info, 'Spot', 50))
 # map like 
 #40. ✅ Use list comprehension to return a list containing every pet name from "pet_info" changed to uppercase
 
+print(pet_info)
+new_pet_list = [pet.get('name').upper() for pet in pet_info]
+print(new_pet_list)
+
+
+
 
 # find like
 #41. ✅ Use list comprehension to find a pet named spot
 
+spot = [pet for pet in pet_info if pet.get("name") == 'Spot' ]
+print(spot)
+
 
 # filter like
 #42. ✅ Use list comprehension to find all of the pets under 3 years old
+
+young = [pet for pet in pet_info if pet.get('age') < 3]
+print(young)
