@@ -148,12 +148,20 @@ print(pet_info_spot['age'])
 # Deleting
 #31. ✅ Delete Rose's age using the "del" keyword => []
 
+del pet_info_rose['age']
+print(pet_info_rose)
+
 
 #32. ✅ Delete Spot's age using ".pop"
+
+pet_info_spot.pop('age')
+print(pet_info_spot)
 
 
 #33. ✅ Delete the last item for Rose using "popitem()"
 
+pet_info_rose.popitem()
+print(pet_info_rose)
 
 # Loops 
 pet_info = [
@@ -176,8 +184,14 @@ pet_info = [
 
 #34. ✅ Loop through a range of 10 and print every number within the range
 
+for num in range(10):
+    print(num)
+
 
 #35. ✅ Loop through a range between 50 and 60 that iterates by 2 and print every number
+
+for num in range(50, 60, 2):
+    print(num)
 
 
 #36. ✅ Loop through the "pet_info" list and print every dictionary 
