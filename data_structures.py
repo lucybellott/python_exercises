@@ -216,6 +216,17 @@ for pet in pet_info:
         # Every loop should increase the count by 1
     # Return the counter 
 
+    def counter_test(list):
+        counter = 0
+        while counter < len(list):
+            counter += 1
+
+        return counter
+
+    print(counter_test(pet_names))   
+
+
+
 
 #39. ✅ Create a function that updates the age of a given pet
         # The function should take a list of "dictionaries", "name" and "age" as parameters 
@@ -227,6 +238,39 @@ for pet in pet_info:
         # If the dictionary containing a matching name is found, update the item's age with the new age 
             # Otherwise, return 'Pet not found'
     
+    # def pet_finder(list, name, age):
+    #     index = 0
+    #     while (index < len(list) -1 and list[index]['name'] != name):
+    #             index += 1
+                
+    #             if list[index]['name'] == name:
+    #                 list[index]['age'] = age
+
+    #                 return list
+    #             else:
+    #               return 'Pet not found'
+
+    #     print(pet_finder(pet_info, 'Spot', 50))      
+
+
+    def update_pet_age(list, name, age):
+    
+        index = 0
+    
+        while(list[index]['name'] != name and index < len(list) - 1):
+            index += 1
+
+        if (list[index]['name'] == name):
+            list[index]['age'] = age
+            return list
+        
+        else:
+            return 'Pet Not Found!'
+
+#Pet Does Exist / Age is Updated
+print(update_pet_age(pet_info, 'Spot', 50))
+
+
 
 # map like 
 #40. ✅ Use list comprehension to return a list containing every pet name from "pet_info" changed to uppercase
