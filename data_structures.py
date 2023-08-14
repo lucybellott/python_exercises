@@ -195,11 +195,18 @@ for num in range(50, 60, 2):
 
 
 #36. ✅ Loop through the "pet_info" list and print every dictionary 
-
+for pet in pet_info:
+    print(pet)
 
 #37. ✅ Create a function that takes a list a parameter 
     # The function should use a "for" loop to loop through the list and print each item 
     # Invoke the function and pass it "pet_names" as an argument
+
+    def pet_stuff(list):
+        for pet in list:
+            print(pet)
+
+    pet_stuff(pet_names)         
 
 
 #38. ✅ Create a function that takes a list as a parameter
