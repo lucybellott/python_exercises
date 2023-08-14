@@ -140,6 +140,9 @@ pet_info_rose['age'] = 12
 print(pet_info_rose['age'])
 
 #30. ✅ Update Spot's age to 26 => .update({...})
+pet_info_spot.update({'age': '26'})
+print(pet_info_spot['age'])
+
 
 
 # Deleting
