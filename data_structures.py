@@ -288,7 +288,6 @@ print(new_pet_list)
 spot = [pet for pet in pet_info if pet.get("name") == 'Spot' ]
 print(spot)
 
-
 # filter like
 #42. ✅ Use list comprehension to find all of the pets under 3 years old
 
